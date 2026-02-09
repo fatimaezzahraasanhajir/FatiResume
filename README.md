@@ -1,10 +1,10 @@
-# 🧩 FatiResume - AI-Powered Resume Analysis Platform
+# 🧩 FatiResume - ML-Powered Resume Analysis Platform
 
 <div align="center">
 
-![FatiResume Logo](https://img.shields.io/badge/FatiResume-AI%20Resume%20Analyzer-667eea?style=for-the-badge&logo=python&logoColor=white)
+![FatiResume Logo](https://img.shields.io/badge/FatiResume-ML%20Resume%20Analyzer-667eea?style=for-the-badge&logo=python&logoColor=white)
 
-**Smart resume analysis with ML-powered matching, bias detection, and personalized job recommendations**
+**Machine learning-based resume analysis with custom algorithms, bias detection, and job matching**
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -17,42 +17,42 @@
 
 ## ✨ Features
 
-- 🎯 **Smart Resume Analysis** - Achieve 70-90% match accuracy with custom ML models
-- 🔍 **Bias Detection** - Identify and eliminate biased language in job descriptions
-- 💼 **Personalized Job Recommendations** - Get tailored job suggestions based on your CV skills
-- 🎨 **Beautiful UI** - Modern, responsive design with smooth animations
-- ⚡ **Lightning Fast** - Sub-5 second analysis with no heavy model downloads
-- 🛡️ **Privacy First** - All processing happens locally, no data sent to external servers
+- 🎯 **Resume-Job Scoring** - Custom ML models achieve 70-90% match accuracy
+- 🔍 **Bias Detection** - Rule-based algorithm identifies biased language patterns
+- 💼 **Skill Extraction** - Pattern matching identifies technical skills from text
+- 🎨 **Clean Interface** - Streamlit-based UI with responsive design
+- ⚡ **Fast Processing** - Sub-5 second analysis with lightweight algorithms
+- 🛡️ **Local Processing** - All computation happens locally, no external APIs
 
-## 🤖 Machine Learning Models
+## 🤖 Machine Learning Implementation
 
-### Custom Lightweight Embedding Model
-- **Type**: Keyword-based feature extraction
-- **Features**: 25+ tech keywords (Python, TensorFlow, AWS, etc.)
-- **Advantages**: Fast, reliable, no external dependencies
+### Custom Feature Engineering
+- **Approach**: Keyword-based feature extraction with 25+ tech keywords
+- **Features**: Binary vector for Python, TensorFlow, AWS, etc.
+- **Advantages**: No external dependencies, deterministic results
 
-### Algorithms Used
-- **Cosine Similarity** - Resume-job semantic matching
-- **Skill Extraction** - Pattern matching for skill detection
-- **Bias Detection** - Rule-based classification for ethical hiring
-- **Scoring Engine** - Multi-feature analysis for final match score
+### Core Algorithms
+- **Cosine Similarity** - Vector similarity between resume and job descriptions
+- **Pattern Matching** - Regular expression-based skill identification
+- **Rule-Based Classification** - Heuristic bias detection with predefined patterns
+- **Weighted Scoring** - Multi-feature linear combination for final match score
 
-## 🛠️ Tech Stack
+## 🛠️ Technical Implementation
 
-### Backend
-- **Python 3.11+** - Core programming language
-- **FastAPI** - REST API framework
-- **NumPy** - Numerical computations and vector operations
-- **Uvicorn** - High-performance ASGI server
+### Backend Architecture
+- **Python 3.11+** - Core language with type hints
+- **FastAPI** - REST API with automatic documentation
+- **NumPy** - Vector operations and mathematical computations
+- **Uvicorn** - ASGI server for production deployment
 
-### Frontend
-- **Streamlit** - Web application framework
-- **HTML/CSS** - Custom styling and responsive layouts
-- **JavaScript** - Interactive elements and animations
+### Frontend Framework
+- **Streamlit** - Rapid prototyping web framework
+- **HTML/CSS** - Custom styling for professional appearance
+- **JavaScript** - Client-side interactions and animations
 
-### Development
-- **Git** - Version control
-- **VS Code** - Development environment
+### Development Tools
+- **Git** - Version control with conventional commits
+- **VS Code** - Development environment with Python extensions
 
 ## 🚀 Quick Start
 
@@ -107,68 +107,66 @@ RELIABLE_STOP.bat
    - Bias detection report
    - Personalized job suggestions
 
-## 🎯 Results
+## 🎯 Performance Metrics
 
-- **72% average match accuracy** on real resume-job pairs
-- **Sub-5 second analysis time** with lightweight models
-- **95% uptime** with reliable deployment system
-- **Zero external dependencies** - works completely offline
+- **72% average match accuracy** on resume-job pair dataset
+- **< 5 second processing time** with optimized algorithms
+- **95%+ uptime** with robust error handling
+- **< 1MB model footprint** - lightweight implementation
 
-## 📁 Project Structure
+## 📁 System Architecture
 
 ```
 fatiresume/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py              # FastAPI application
+│   │   ├── main.py              # FastAPI application entry point
 │   │   ├── api/
-│   │   │   ├── routes.py        # API endpoints
-│   │   │   └── schemas.py       # Data models
+│   │   │   ├── routes.py        # REST API endpoints
+│   │   │   └── schemas.py       # Pydantic data models
 │   │   └── services/
-│   │       ├── scoring.py       # ML models
-│   │       ├── bias.py          # Bias detection
-│   │       ├── jobs.py          # Job matching
-│   │       └── parsing.py       # Resume parsing
+│   │       ├── scoring.py       # ML algorithms and feature engineering
+│   │       ├── bias.py          # Bias detection logic
+│   │       ├── jobs.py          # Job matching algorithms
+│   │       └── parsing.py       # Text processing utilities
 │   └── requirements.txt         # Python dependencies
 ├── frontend/
-│   └── streamlit_app.py         # Web interface
-├── RELIABLE_START.bat           # Startup script
-├── RELIABLE_STOP.bat            # Stop script
-└── README.md                    # This file
+│   └── streamlit_app.py         # Web interface implementation
+├── RELIABLE_START.bat           # Automated startup script
+├── RELIABLE_STOP.bat            # Service shutdown script
+└── README.md                    # Documentation
 ```
 
-## 🔧 Configuration
+## 🔧 Implementation Details
 
-### Customization Options
-- **Add new skills** in `backend/app/services/scoring.py`
-- **Modify bias detection rules** in `backend/app/services/bias.py`
-- **Customize UI styling** in `frontend/streamlit_app.py`
-- **Adjust scoring weights** in `backend/app/services/country.py`
-
-## 🌟 Highlights
+### Algorithm Configuration
+- **Skill vocabulary**: Extended in `backend/app/services/scoring.py`
+- **Bias patterns**: Modified in `backend/app/services/bias.py`
+- **UI customization**: Styled in `frontend/streamlit_app.py`
+- **Scoring weights**: Tuned in `backend/app/services/country.py`
 
 ### Technical Achievements
-- ✅ **End-to-end ML application** built from scratch
-- ✅ **Custom lightweight models** (no heavy dependencies)
-- ✅ **Ethical AI** with bias detection and mitigation
-- ✅ **Production-ready** with proper error handling
-- ✅ **Beautiful UX** with responsive design
+- ✅ **Custom ML pipeline** built from scratch
+- ✅ **Deterministic algorithms** with reproducible results
+- ✅ **Ethical considerations** with bias detection framework
+- ✅ **Production-ready** with comprehensive error handling
+- ✅ **Clean architecture** with separation of concerns
 
-### Problem Solved
-- Helps job seekers optimize their resumes effectively
-- Reduces bias in hiring processes
-- Saves time in job applications
-- Provides actionable career insights
+### Problem-Solving Approach
+- Implemented efficient text processing for resume analysis
+- Created bias detection system for fair hiring practices
+- Optimized algorithms for fast, local computation
+- Designed scalable architecture for future enhancements
 
-## 📈 Performance
+## 📈 Benchmark Results
 
-| Metric | Value |
-|--------|-------|
-| Analysis Speed | < 5 seconds |
-| Match Accuracy | 72% average |
-| Model Size | < 1MB (lightweight) |
-| Uptime | 95%+ |
-| Memory Usage | < 500MB |
+| Metric | Measured Value | Target |
+|--------|---------------|--------|
+| Processing Speed | < 5 seconds | < 10 seconds |
+| Match Accuracy | 72% average | > 70% |
+| Memory Usage | < 500MB | < 1GB |
+| Model Size | < 1MB | < 5MB |
+| System Uptime | 95%+ | > 90% |
 
 ## 🤝 Contributing
 
@@ -205,21 +203,18 @@ Fatima Ez-zahraa Sanhajir - [@fatimaezzahraasanhajir](https://github.com/fatimae
 Made with ❤️ by [Fatima Ez-zahraa Sanhajir](https://github.com/fatimaezzahraasanhajir)
 
 </div>
-- **Skill gap analysis** (matched vs missing skills)
-- **Bias report v1** (flags potentially biased language)
-- **Country-specific adaptation** (US/FR/DE/UK weighting)
-
-## Architecture
+## 🏗️ System Architecture
 
 ```text
-Streamlit UI  ->  FastAPI (/api/analyze)  ->  ML services
-                                   |-> parsing (pdf/docx/text)
-                                   |-> embeddings + scoring
-                                   |-> explainability payload
-                                   |-> bias report
+Streamlit Frontend  ->  FastAPI Backend  ->  ML Processing Pipeline
+                      /api/analyze         |-> Text preprocessing
+                                           |-> Feature extraction
+                                           |-> Similarity computation
+                                           |-> Bias analysis
+                                           |-> Score aggregation
 ```
 
-## Example API response (shape)
+## 📊 API Response Schema
 
 ```json
 {
@@ -243,58 +238,64 @@ Streamlit UI  ->  FastAPI (/api/analyze)  ->  ML services
 }
 ```
 
-## Known limitations (v1)
+## ⚙️ Development Setup
 
-- Skill extraction is a **small heuristic vocabulary** (easy to extend)
-- Bias detection uses a **lexicon + simple rules** (not a trained fairness model)
-- No feedback loop / retraining pipeline yet
-
-## Roadmap ideas
-
-- Fairness stress test (counterfactual name/university changes)
-- Uncertainty estimation (ensembles / MC dropout)
-- Experiment tracking + model versioning
-
-## Run locally
-
-### 1) Create venv
-
+### Environment Configuration
 ```powershell
+# Create virtual environment
 python -m venv .venv
 .\.venv\Scripts\activate
-```
 
-### 2) Install backend deps
-
-```powershell
+# Install backend dependencies
 pip install -r backend\requirements.txt
+
+# Start FastAPI server
+cd backend
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-### 3) Start the API
-
-Run from the `backend` folder:
-
+### Frontend Development
 ```powershell
-uvicorn app.main:app --reload
+# In separate terminal
+streamlit run frontend\streamlit_app.py --server.port 8501
 ```
 
-API docs:
-- http://127.0.0.1:8000/docs
+**API Documentation:** http://127.0.0.1:8000/docs  
+**Frontend Interface:** http://localhost:8501
 
-### 4) Start Streamlit
+## 🚀 Deployment Strategy
 
-In a second terminal (project root):
+### Backend Deployment
+- **Platform**: Render, Fly.io, or AWS ECS
+- **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+- **Requirements**: Python 3.11+, 512MB RAM minimum
 
-```powershell
-streamlit run frontend\streamlit_app.py
-```
+### Frontend Deployment
+- **Platform**: Streamlit Community Cloud
+- **Configuration**: Set `API_BASE` environment variable to backend URL
+- **Requirements**: Streamlit configuration in `.streamlit/config.toml`
 
-Streamlit UI:
-- http://localhost:8501
+## 🔍 Current Limitations
 
-## Deploy (high level)
+### Algorithm Constraints
+- **Skill extraction**: Limited to predefined vocabulary (easily extensible)
+- **Bias detection**: Rule-based heuristics (not trained fairness model)
+- **Similarity computation**: Keyword-based (no semantic embeddings)
 
-- Backend: deploy `backend/` as a FastAPI service (Render/Fly.io). Start command:
-  - `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-- Frontend: deploy `frontend/` on Streamlit Community Cloud.
-  - Set `API_BASE` to your backend URL using Streamlit secrets.
+### Technical Debt
+- No model versioning or experiment tracking
+- Missing retraining pipeline for model improvements
+- Limited multi-language support
+
+## 🗺️ Development Roadmap
+
+### Phase 2 Enhancements
+- **Semantic embeddings**: Replace keyword features with sentence transformers
+- **Fairness testing**: Counterfactual analysis for bias validation
+- **Uncertainty estimation**: Monte Carlo dropout or ensemble methods
+- **Model versioning**: MLflow integration for experiment tracking
+
+### Phase 3 Goals
+- **Multi-language support**: Extended vocabulary for international markets
+- **Real-time processing**: WebSocket integration for live analysis
+- **Advanced analytics**: User behavior tracking and model performance metrics
