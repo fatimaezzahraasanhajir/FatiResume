@@ -192,7 +192,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Fatima Ez-zahraa Sanhajir - [@fatimaezzahraasanhajir](https://github.com/fatimaezzahraasanhajir) - your.email@example.com
+Fatima Ez-zahraa Sanhajir - [@fatimaezzahraasanhajir](https://github.com/fatimaezzahraasanhajir) - fatimaezzahraasanhajir443@gmail.com
 
 **Project Link:** [https://github.com/fatimaezzahraasanhajir/fatiresume](https://github.com/fatimaezzahraasanhajir/fatiresume)
 
